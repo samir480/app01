@@ -5,19 +5,19 @@ import SearchMenu from "../assets/search-menu.png";
 function TransectionScreen() {
   return (
     <View>
-      <View Style={styles.header}>
+      <View style={styles.header}>
         {/* header */}
-        <View Style={styles.leftArrow}>
-          <Image source={LeftArrow} width={10} />
+        <View style={styles.leftArrow}>
+          <Image source={LeftArrow} style={styles.image} />
         </View>
-        <View Style={styles.title}>
+        <View style={styles.title}>
           <Text>Transections</Text>
         </View>
-        <View Style={styles.searchMenu}>
-          <Image source={SearchMenu} width={10} />
+        <View style={styles.searchMenu}>
+          <Image source={SearchMenu} style={styles.image} />
         </View>
       </View>
-      <View Style={styles.list}>{/* list */}</View>
+      <View style={styles.list}>{/* list */}</View>
     </View>
   );
 }
@@ -25,7 +25,10 @@ function TransectionScreen() {
 const styles = StyleSheet.create({
   header: {
     width: 100,
-    backgroundColor: "blue",
+    flex:1,
+    height:"maxContent",
+    flexDirection:"row",
+    justifyContent:"spaceBetween"
   },
   leftArrow: {
     width: 20,
@@ -35,6 +38,10 @@ const styles = StyleSheet.create({
   },
   searchMenu: {
     width: 20,
+  },
+  image: {
+    width: 20,
+    height: 20,
   },
 });
 
