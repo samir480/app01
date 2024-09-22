@@ -3,6 +3,7 @@ import { StyleSheet, Text, TextInput, View } from "react-native";
 // import SignupForm from "./components/form/signupForm/SignupForm"
 import  LoginScreen  from "./screens/LoginScreen";
 import TransectionScreen from "./screens/TransectionScreen";
+import HomeScreen from "./screens/home/HomeScreen";
 
 export default function App() {
   return (
@@ -11,7 +12,8 @@ export default function App() {
       <StatusBar style="auto" />
       {/* <SignupForm/> */}
       {/* <LoginScreen /> */}
-      <TransectionScreen/>
+      {/* <TransectionScreen/> */}
+      <HomeScreen/>
       {/* <TextInput
         // style={styles.input}
         placeholder="Email"
@@ -28,7 +30,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    // alignItems: "center",
+    // justifyContent: "center",
   },
 });
